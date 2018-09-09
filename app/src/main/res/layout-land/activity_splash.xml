@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    android:padding="24dp"
+
+    tools:context="com.sunshine.sunshineagri.SplashActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/relative1"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginEnd="28dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sunshine_logo_land" />
+
+        <!--android:layout_gravity="center_vertical|center_horizontal"
+          android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            app:layout_anchorGravity="bottom|center"
+        app:layout_anchor="@+id/img_sun"-->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_above="@id/relative1"
+        android:layout_height="wrap_content">
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_sun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginBottom="24dp"
+        android:layout_marginStart="162dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_icon_sun" />
+
+</RelativeLayout>
+
